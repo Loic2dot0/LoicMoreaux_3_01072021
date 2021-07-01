@@ -17,6 +17,11 @@ body {
   font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body > * {
+  width: 100%;
+  margin: auto;
+}
+
 body * {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -42,8 +47,6 @@ img {
 }
 
 header {
-  width: 100%;
-  margin: auto;
   height: 17vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,4 +62,32 @@ header {
 .header__logo {
   width: 43.5vw;
   margin: auto;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 6vw;
+  margin-top: 17vw;
+}
+
+.footer__title {
+  font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+.footer__listing {
+  list-style: none;
+  padding: 0;
+  line-height: 6.5vw;
+}
+
+.footer__listing i {
+  display: inline-block;
+  width: 5vw;
+  margin-right: 0.5vw;
+}
+
+.footer__listing a {
+  color: #fff;
 }
