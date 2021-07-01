@@ -23,8 +23,8 @@ body > * {
 }
 
 body * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h2 {
@@ -43,7 +43,7 @@ a {
 }
 
 img {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 .header {
