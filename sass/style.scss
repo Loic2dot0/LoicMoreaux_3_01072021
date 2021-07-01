@@ -10,11 +10,13 @@
 @import "./base/body";
 
 //components
+@import "./components/button";
 
 //layout
 @import "./layouts/header";
-@import "./layouts/_footer.scss"
+@import "./layouts/footer";
 
 //pages
+@import "./pages/index";
 
 //themes

@@ -1,0 +1,60 @@
+.restaurant{
+    background-color: darken($color_back_light, 3.5%);
+    padding: 15vw 0;
+
+    >*{
+        width: 90vw;
+        margin: auto;
+    }
+
+    &__title{
+        padding-bottom: 2vw;
+    }
+}
+
+.restaurant_card{
+    display: block;
+    height: 67vw;
+    margin-top: 5vw;
+    padding: 0.2vw;
+    border-radius: 3.5vw;
+    background-color: $color_back_light;
+    position: relative;
+
+    img{
+        object-fit: cover;
+        object-position: 50% 50%;
+        overflow: hidden;
+        height: 46vw;
+        min-width: 100%;
+        margin: auto;
+        border-radius: 3.3vw 3.3vw 0 0;
+    }
+
+    h3, p{
+        margin: 0;
+    }
+
+    &__new{
+        position: absolute;
+        top: 4vw;
+        right: 3vw;
+        width: 21vw;
+        line-height: 8vw;
+        text-align: center;
+        border-radius: 1vw;
+        background-color: $color_tertiary;
+        color: darken($color_tertiary, 50%);
+
+        &--hidden{
+            display: none;
+        }
+    }
+
+    &__like{
+        position: absolute;
+        bottom: 9vw;
+        right: 6vw;
+    }
+}
+
