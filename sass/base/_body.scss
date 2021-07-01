@@ -1,3 +1,7 @@
+//for dev only
+//*{outline: solid 1px red;}
+// end for dev only
+
 body{
     margin:0px;
     color: $text_dark;
@@ -22,4 +26,8 @@ h3{
 a{
     color: $text_dark;
     text-decoration: none;
+}
+
+img{
+    max-width: 100vw;
 }
