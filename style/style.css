@@ -86,7 +86,7 @@ img {
           transform: scale(1.2);
 }
 
-footer {
+.footer {
   background-color: #353535;
   color: #fff;
   padding: 6vw;

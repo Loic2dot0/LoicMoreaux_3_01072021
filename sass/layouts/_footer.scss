@@ -1,27 +1,27 @@
-footer{
+.footer{
     background-color: $color_back_dark;
     color: $text_light;
     padding: 6vw;
     margin-top: 17vw;
-}
 
-.footer__title{
-    font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-}
+    &__title{
+        font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+    }
 
-.footer__listing{
-    list-style: none;
-    padding: 0;
-    line-height: 6.5vw;
-}
+    &__listing{
+        list-style: none;
+        padding: 0;
+        line-height: 6.5vw;
 
-.footer__listing i{
-    display: inline-block;
-    width: 5vw;
-    margin-right: 0.5vw;
-}
+        i{
+            display: inline-block;
+            width: 5vw;
+            margin-right: 0.5vw;
+        }
 
-.footer__listing a{
-    color: $text_light;
+        a{
+            color: $text_light;
+        }
+    }
 }
