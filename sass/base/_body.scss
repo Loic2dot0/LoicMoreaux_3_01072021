@@ -1,0 +1,25 @@
+body{
+    margin:0px;
+    color: $text_dark;
+    font-size: 3.5vw;
+    font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body *{
+    box-sizing: content-box;
+}
+
+h2{
+    font-size: 4.6vw;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 4.0vw;
+    font-weight: bold;
+}
+
+a{
+    color: $text_dark;
+    text-decoration: none;
+}
