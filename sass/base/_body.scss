@@ -7,15 +7,15 @@ body{
     color: $text_dark;
     font-size: 3.5vw;
     font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
-}
 
-body>*{
-    width: 100%;
-    margin: auto;
-}
+    >*{
+        width: 100%;
+        margin: auto;
+    }
 
-body *{
-    box-sizing: content-box;
+    *{
+        box-sizing: content-box;
+    }
 }
 
 h2{
