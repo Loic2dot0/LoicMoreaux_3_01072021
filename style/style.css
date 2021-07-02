@@ -46,27 +46,28 @@ img {
   max-width: 100%;
 }
 
-p.button_like i {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/*.button_like{
+    i{
+        position: absolute;
+        top:0;
+        left:0;}
 
-p.button_like i.fas.fa-heart {
-  color: #9356DC;
-  opacity: 0;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
+        &.fas{
+            color: $color_primary;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 1500ms;
+        }
 
-p.button_like i.fas.fa-heart:active, p.button_like i.fas.fa-heart:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
+        &.far:hover + &.fas{
+            opacity: 1;
+            transform: scale(1.2);
+        }
 
+        /*&:active, &:hover{
+            opacity: 1;
+            transform: scale(1.2);
+        }*/
 .header {
   height: 17vw;
   display: -webkit-box;
@@ -111,7 +112,6 @@ p.button_like i.fas.fa-heart:active, p.button_like i.fas.fa-heart:hover {
   background-color: #353535;
   color: #fff;
   padding: 6vw;
-  margin-top: 17vw;
 }
 
 .footer__title {
@@ -172,7 +172,7 @@ p.button_like i.fas.fa-heart:active, p.button_like i.fas.fa-heart:hover {
 }
 
 .restaurant_card h3, .restaurant_card p {
-  margin: 0;
+  margin: 2vw;
 }
 
 .restaurant_card__new {
@@ -192,7 +192,8 @@ p.button_like i.fas.fa-heart:active, p.button_like i.fas.fa-heart:hover {
 }
 
 .restaurant_card__like {
+  font-size: 6vw;
   position: absolute;
   bottom: 9vw;
-  right: 6vw;
+  right: 7vw;
 }

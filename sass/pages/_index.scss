@@ -32,7 +32,7 @@
     }
 
     h3, p{
-        margin: 0;
+        margin: 2vw;
     }
 
     &__new{
@@ -52,9 +52,10 @@
     }
 
     &__like{
+        font-size: 6vw;
         position: absolute;
         bottom: 9vw;
-        right: 6vw;
+        right: 7vw;
     }
 }
 
