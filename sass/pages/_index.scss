@@ -1,3 +1,26 @@
+.introduction{
+    text-align: center;
+    background-color: darken($color_back_light, 3.5%);
+    font-size: 5vw;
+
+    &__location{
+        background-color: darken($color_back_light, 8.4%);
+        line-height: 13vw;
+        margin: 0 0 8vw 0;
+        
+        i{
+            margin-right: 4vw;
+        }
+    }
+    
+    h2{
+        margin: auto 17vw;
+        font-size: 6vw;
+    }
+    
+}
+
+
 .restaurant{
     background-color: darken($color_back_light, 3.5%);
     padding: 15vw 0;

@@ -28,7 +28,7 @@ body * {
 }
 
 h2 {
-  font-size: 4.6vw;
+  font-size: 4.8vw;
   font-weight: bold;
 }
 
@@ -69,12 +69,13 @@ img {
             transform: scale(1.2);
         }*/
 .header {
+  position: relative;
   height: 17vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0px 0px 1.6vw #000;
-          box-shadow: 0px 0px 1.6vw #000;
+  -webkit-box-shadow: 0px 0px 1.6vw gray;
+          box-shadow: 0px 0px 1.6vw gray;
 }
 
 .header__title {
@@ -133,6 +134,27 @@ img {
 
 .footer__listing a {
   color: #fff;
+}
+
+.introduction {
+  text-align: center;
+  background-color: #f6f6f6;
+  font-size: 5vw;
+}
+
+.introduction__location {
+  background-color: #eaeaea;
+  line-height: 13vw;
+  margin: 0 0 8vw 0;
+}
+
+.introduction__location i {
+  margin-right: 4vw;
+}
+
+.introduction h2 {
+  margin: auto 17vw;
+  font-size: 6vw;
 }
 
 .restaurant {
