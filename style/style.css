@@ -58,6 +58,8 @@ img {
   font-weight: bold;
   -webkit-box-shadow: 0px 1vw 1.6vw #b3b3b3;
           box-shadow: 0px 1vw 1.6vw #b3b3b3;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .button_main:hover {
@@ -205,8 +207,8 @@ img {
 .restaurant_card img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 62%;
+     object-position: 50% 62%;
   overflow: hidden;
   height: 46vw;
   min-width: 100%;
