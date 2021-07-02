@@ -21,6 +21,10 @@
 
         a{
             color: $text_light;
+
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

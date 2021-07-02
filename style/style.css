@@ -158,6 +158,10 @@ img {
   color: #fff;
 }
 
+.footer__listing a:hover {
+  text-decoration: underline;
+}
+
 .introduction {
   text-align: center;
   background-color: #f6f6f6;
@@ -180,18 +184,21 @@ img {
   font-size: 6vw;
 }
 
-.restaurant {
-  background-color: #f6f6f6;
+.functioning, .restaurant {
   padding: 15vw 0;
 }
 
-.restaurant > * {
+.functioning > *, .restaurant > * {
   width: 90vw;
   margin: auto;
 }
 
-.restaurant__title {
+.functioning__title, .restaurant__title {
   padding-bottom: 2vw;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
 }
 
 .restaurant_card {

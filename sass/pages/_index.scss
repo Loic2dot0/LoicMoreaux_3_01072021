@@ -20,9 +20,7 @@
     }  
 }
 
-
-.restaurant{
-    background-color: darken($color_back_light, 3.5%);
+.functioning, .restaurant{
     padding: 15vw 0;
 
     >*{
@@ -33,6 +31,10 @@
     &__title{
         padding-bottom: 2vw;
     }
+}
+
+.restaurant{
+    background-color: darken($color_back_light, 3.5%);
 }
 
 .restaurant_card{
@@ -81,4 +83,3 @@
         right: 7vw;
     }
 }
-
