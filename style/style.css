@@ -46,6 +46,26 @@ img {
   max-width: 100%;
 }
 
+.button_main {
+  display: block;
+  line-height: 13.4vw;
+  border-radius: 6.7vw;
+  width: 50vw;
+  margin: auto;
+  background: linear-gradient(170deg, #FF79DA, 10%, #9356DC);
+  color: #fff;
+  font-size: 3.5vw;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 1vw 1.6vw #b3b3b3;
+          box-shadow: 0px 1vw 1.6vw #b3b3b3;
+}
+
+.button_main:hover {
+  background: linear-gradient(170deg, #ff93e1, 10%, #a16be0);
+  -webkit-box-shadow: 0px 1vw 1vw gray;
+          box-shadow: 0px 1vw 1vw gray;
+}
+
 /*.button_like{
     i{
         position: absolute;
@@ -140,6 +160,7 @@ img {
   text-align: center;
   background-color: #f6f6f6;
   font-size: 5vw;
+  padding-bottom: 15vw;
 }
 
 .introduction__location {

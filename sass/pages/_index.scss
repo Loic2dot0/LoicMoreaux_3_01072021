@@ -2,6 +2,7 @@
     text-align: center;
     background-color: darken($color_back_light, 3.5%);
     font-size: 5vw;
+    padding-bottom: 15vw;
 
     &__location{
         background-color: darken($color_back_light, 8.4%);
@@ -16,8 +17,7 @@
     h2{
         margin: auto 17vw;
         font-size: 6vw;
-    }
-    
+    }  
 }
 
 

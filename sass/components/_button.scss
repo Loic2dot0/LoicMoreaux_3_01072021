@@ -1,0 +1,44 @@
+.button_main{
+    display: block;
+    line-height: 13.4vw;
+    border-radius: 6.7vw;
+    width: 50vw;
+    margin:auto;
+    background: linear-gradient(170deg,$color_secondary, 10%, $color_primary);
+    color: $text_light;
+    font-size: 3.5vw;
+    font-weight: bold;
+    box-shadow: 0px 1vw 1.6vw darken($color_back_light, 30%);
+
+    &:hover{
+        background: linear-gradient(170deg, lighten($color_secondary, 5%), 10%, lighten($color_primary, 5%));
+        box-shadow: 0px 1vw 1vw darken($color_back_light, 50%);
+    }
+}
+
+
+
+/*.button_like{
+    i{
+        position: absolute;
+        top:0;
+        left:0;}
+
+        &.fas{
+            color: $color_primary;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 1500ms;
+        }
+
+        &.far:hover + &.fas{
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        /*&:active, &:hover{
+            opacity: 1;
+            transform: scale(1.2);
+        }*/
+   // }   
+//}
