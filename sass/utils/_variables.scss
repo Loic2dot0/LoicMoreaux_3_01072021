@@ -7,3 +7,8 @@ $color_back_dark: #353535;
 
 $text_dark: #000;
 $text_light: #fff;
+
+$grey_light: darken($color_back_light, 3.5%);
+$grey_mid: darken($color_back_light, 8.4%);
+$grey_dark: darken($color_back_light, 30%);
+$grey_darker: darken($color_back_light, 50%);

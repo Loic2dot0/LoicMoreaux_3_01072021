@@ -1,11 +1,11 @@
 .introduction{
     text-align: center;
-    background-color: darken($color_back_light, 3.5%);
+    background-color: $grey_light;
     font-size: 5vw;
     padding-bottom: 15vw;
 
     &__location{
-        background-color: darken($color_back_light, 8.4%);
+        background-color: $grey_mid;
         line-height: 13vw;
         margin: 0 0 8vw 0;
         
@@ -39,7 +39,7 @@
     
     li{
         counter-increment: perso;
-        background-color: darken($color_back_light, 3.5%);
+        background-color: $grey_light;
         width: 86vw;
         line-height: 20vw;
         margin-top: 7vw;
@@ -64,7 +64,7 @@
         }
 
         i{
-            color: darken($color_back_light, 50%);
+            color: $grey_darker;
             font-size: 4.5vw;
             width: 6vw;
             margin-right: 7vw;
@@ -74,7 +74,7 @@
 }
 
 .restaurant{
-    background-color: darken($color_back_light, 3.5%);
+    background-color: $grey_light;
 }
 
 .restaurant_card{
