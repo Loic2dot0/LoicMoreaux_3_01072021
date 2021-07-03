@@ -1,0 +1,88 @@
+@keyframes loading{
+    0% {
+     transform: translateX(-9999px);
+     opacity: 0;
+    }
+
+    5%{
+     transform: translateX(0);
+     opacity: 0;
+    }
+
+    15%, 88%{
+        opacity: 1;
+    }
+
+    95%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-9999px);
+      opacity: 0;
+    }
+}
+
+@keyframes spinner{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading_box{
+    position: fixed;
+    top: 25%;
+    left: 37.5%;
+    width: 25vw;
+    height: 25vw;
+    animation: loading 3s 400ms both;
+
+    &__spinner{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        position: absolute;
+        top: 11.5vw;
+        left: 9vw;  
+        transform-origin: 3.5vw center;
+
+        &--primary{
+            background-color: $color_primary;
+            z-index: 10;
+            animation: spinner 800ms 600ms infinite linear;
+        }
+
+        &--primarylight{
+            background-color: lighten($color_primary, 10%);
+            z-index: 9;
+            animation: spinner 800ms 800ms infinite linear;
+        }
+
+        &--secondary{
+            background-color: $color_secondary;
+            z-index: 8;
+            animation: spinner 800ms 1000ms infinite linear;
+        }
+
+        &--secondarylight{
+            background-color: lighten($color_secondary, 10%);
+            z-index: 7;
+            animation: spinner 800ms 1200ms infinite linear;
+        }
+
+        &--tertiary{
+            background-color: $color_tertiary;
+            z-index: 6;
+            animation: spinner 800ms 1400ms infinite linear;
+        }
+
+        &--tertiarylight{
+            background-color: lighten($color_tertiary, 10%);
+            z-index: 5;
+            animation: spinner 800ms 1600ms infinite linear;
+        }
+    }
+}

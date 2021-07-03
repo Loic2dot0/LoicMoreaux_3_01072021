@@ -36,6 +36,7 @@
 .functioning__listing{
     list-style: none;
     padding-left: 3vw;
+    counter-reset: perso;
     
     li{
         counter-increment: perso;
