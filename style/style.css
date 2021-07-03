@@ -197,6 +197,50 @@ img {
   padding-bottom: 2vw;
 }
 
+.functioning__listing {
+  list-style: none;
+  margin-left: -2vw;
+}
+
+.functioning__listing li {
+  counter-increment: perso;
+  background-color: #f6f6f6;
+  width: 86vw;
+  line-height: 20vw;
+  margin-top: 7vw;
+  border-radius: 5vw;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 1vw 1.6vw #b3b3b3;
+          box-shadow: 0px 1vw 1.6vw #b3b3b3;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.functioning__listing li::before {
+  content: counter(perso);
+  display: inline-block;
+  text-align: center;
+  width: 6vw;
+  line-height: 6vw;
+  margin: auto 6vw auto -3vw;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+
+.functioning__listing li:hover {
+  -webkit-box-shadow: 0px 1vw 1vw gray;
+          box-shadow: 0px 1vw 1vw gray;
+}
+
+.functioning__listing li i {
+  color: gray;
+  font-size: 4.5vw;
+  width: 6vw;
+  margin-right: 7vw;
+  text-align: center;
+}
+
 .restaurant {
   background-color: #f6f6f6;
 }
@@ -209,6 +253,15 @@ img {
   border-radius: 3.5vw;
   background-color: #FFF;
   position: relative;
+  -webkit-box-shadow: 0px 1vw 1.6vw #b3b3b3;
+          box-shadow: 0px 1vw 1.6vw #b3b3b3;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.restaurant_card:hover {
+  -webkit-box-shadow: 0px 1vw 1vw gray;
+          box-shadow: 0px 1vw 1vw gray;
 }
 
 .restaurant_card img {

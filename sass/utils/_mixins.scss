@@ -1,0 +1,8 @@
+@mixin shadow_effect{
+    box-shadow: 0px 1vw 1.6vw darken($color_back_light, 30%);
+    transition: all 400ms ease-in-out;
+}
+
+@mixin shadow_effect_hover{
+    box-shadow: 0px 1vw 1vw darken($color_back_light, 50%);
+}
