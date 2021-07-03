@@ -96,8 +96,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0px 0px 1.6vw greydarker;
-          box-shadow: 0px 0px 1.6vw greydarker;
+  -webkit-box-shadow: 0px 0px 1.6vw gray;
+          box-shadow: 0px 0px 1.6vw gray;
 }
 
 .header__title {
