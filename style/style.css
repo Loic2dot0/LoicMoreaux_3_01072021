@@ -228,9 +228,12 @@ img {
   border-radius: 50%;
 }
 
-.functioning__listing li:hover {
-  -webkit-box-shadow: 0px 1vw 1vw gray;
-          box-shadow: 0px 1vw 1vw gray;
+.functioning__listing li:last-child {
+  background-color: #f4eefc;
+}
+
+.functioning__listing li:last-child i {
+  color: #9356DC;
 }
 
 .functioning__listing li i {
@@ -253,6 +256,8 @@ img {
   border-radius: 3.5vw;
   background-color: #FFF;
   position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-box-shadow: 0px 1vw 1.6vw #b3b3b3;
           box-shadow: 0px 1vw 1.6vw #b3b3b3;
   -webkit-transition: all 400ms ease-in-out;
@@ -262,6 +267,8 @@ img {
 .restaurant_card:hover {
   -webkit-box-shadow: 0px 1vw 1vw gray;
           box-shadow: 0px 1vw 1vw gray;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .restaurant_card img {

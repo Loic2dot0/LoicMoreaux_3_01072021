@@ -59,8 +59,12 @@
             border-radius: 50%;
         }
 
-        &:hover{
-            @include shadow_effect_hover;
+        &:last-child{
+            background-color: lighten($color_primary, 36%);
+
+            i{
+                color: $color_primary;
+            }
         }
 
         i{
@@ -71,6 +75,7 @@
             text-align: center;
         }
     }
+
 }
 
 .restaurant{
@@ -85,10 +90,12 @@
     border-radius: 3.5vw;
     background-color: $color_back_light;
     position: relative;
+    transform: scale(1);
     @include shadow_effect;
 
     &:hover{
         @include shadow_effect_hover;
+        transform: scale(1.01);
     }
 
     img{
