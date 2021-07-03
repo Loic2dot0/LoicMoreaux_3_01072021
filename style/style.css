@@ -166,65 +166,66 @@ img {
         }*/
 .loading_box {
   position: fixed;
-  top: 25%;
-  left: 37.5%;
-  width: 25vw;
-  height: 25vw;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-animation: loading 3s 400ms both;
           animation: loading 3s 400ms both;
 }
 
 .loading_box__spinner {
-  width: 2vw;
-  height: 2vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   position: absolute;
-  top: 11.5vw;
-  left: 9vw;
-  -webkit-transform-origin: 3.5vw center;
-          transform-origin: 3.5vw center;
+  top: 50vh;
+  left: 30vw;
+  -webkit-transform-origin: 20vw center;
+          transform-origin: 20vw center;
 }
 
 .loading_box__spinner--primary {
   background-color: #9356DC;
   z-index: 10;
-  -webkit-animation: spinner 800ms 600ms infinite linear;
-          animation: spinner 800ms 600ms infinite linear;
+  -webkit-animation: spinner 900ms 600ms infinite linear;
+          animation: spinner 900ms 600ms infinite linear;
 }
 
 .loading_box__spinner--primarylight {
   background-color: #ae80e5;
   z-index: 9;
-  -webkit-animation: spinner 800ms 800ms infinite linear;
-          animation: spinner 800ms 800ms infinite linear;
+  -webkit-animation: spinner 900ms 750ms infinite linear;
+          animation: spinner 900ms 750ms infinite linear;
 }
 
 .loading_box__spinner--secondary {
   background-color: #FF79DA;
   z-index: 8;
-  -webkit-animation: spinner 800ms 1000ms infinite linear;
-          animation: spinner 800ms 1000ms infinite linear;
+  -webkit-animation: spinner 900ms 900ms infinite linear;
+          animation: spinner 900ms 900ms infinite linear;
 }
 
 .loading_box__spinner--secondarylight {
   background-color: #fface8;
   z-index: 7;
-  -webkit-animation: spinner 800ms 1200ms infinite linear;
-          animation: spinner 800ms 1200ms infinite linear;
+  -webkit-animation: spinner 900ms 1050ms infinite linear;
+          animation: spinner 900ms 1050ms infinite linear;
 }
 
 .loading_box__spinner--tertiary {
   background-color: #99E2D0;
   z-index: 6;
-  -webkit-animation: spinner 800ms 1400ms infinite linear;
-          animation: spinner 800ms 1400ms infinite linear;
+  -webkit-animation: spinner 900ms 1200ms infinite linear;
+          animation: spinner 900ms 1200ms infinite linear;
 }
 
 .loading_box__spinner--tertiarylight {
   background-color: #c1ede2;
   z-index: 5;
-  -webkit-animation: spinner 800ms 1600ms infinite linear;
-          animation: spinner 800ms 1600ms infinite linear;
+  -webkit-animation: spinner 900ms 1350ms infinite linear;
+          animation: spinner 900ms 1350ms infinite linear;
 }
 
 .header {
