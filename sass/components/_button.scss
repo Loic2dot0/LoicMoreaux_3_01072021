@@ -40,6 +40,6 @@
     }
 
     &--off:hover + &--on{
-        transform: scale(1);
+        animation: liking 400ms both;
     }
 }

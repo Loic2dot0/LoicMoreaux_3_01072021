@@ -31,3 +31,18 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes liking{
+    0%{
+        transform: scale(0);
+    }
+    
+    90% {
+        transform: scale(1.2);
+        animation-timing-function: cubic-bezier(.96,.04,.99,.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

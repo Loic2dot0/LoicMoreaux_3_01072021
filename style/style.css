@@ -84,6 +84,40 @@
   }
 }
 
+@-webkit-keyframes liking {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+            animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes liking {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+            animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 body {
   margin: 0px;
   color: #000;
@@ -171,8 +205,8 @@ img {
 }
 
 .button_like__heart--off:hover + .button_like__heart--on {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-animation: liking 400ms both;
+          animation: liking 400ms both;
 }
 
 .loading_box {
