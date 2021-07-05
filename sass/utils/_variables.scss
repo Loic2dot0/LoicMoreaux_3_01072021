@@ -12,3 +12,12 @@ $grey_light: darken($color_back_light, 3.5%);
 $grey_mid: darken($color_back_light, 8.4%);
 $grey_dark: darken($color_back_light, 30%);
 $grey_darker: darken($color_back_light, 50%);
+
+$spinner: (
+    primary: $color_primary,
+    primarylight: lighten($color_primary, 10%),
+    secondary: $color_secondary,
+    secondarylight: lighten($color_secondary, 10%),
+    tertiary: $color_tertiary,
+    tertiarylight: lighten($color_tertiary, 10%)
+);

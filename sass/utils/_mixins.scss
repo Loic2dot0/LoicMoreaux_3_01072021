@@ -6,3 +6,18 @@
 @mixin shadow_effect_hover{
     box-shadow: 0px 1vw 1vw $grey_darker;
 }
+
+@mixin loading_spinner($spinner, $spinner_duration: 900ms, $circle_delai: 150ms){
+    $i : 10;
+    $delai: 600ms;
+    @each $key, $value in $spinner{
+
+        &--#{$key}{
+            background-color: $value;
+            z-index: $i;
+            animation: spinner $spinner_duration $delai infinite linear;
+        }
+        $i: $i - 1;
+        $delai: $delai + $circle_delai;
+    }   
+}
