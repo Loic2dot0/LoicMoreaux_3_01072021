@@ -142,28 +142,39 @@ img {
           box-shadow: 0px 1vw 1vw gray;
 }
 
-/*.button_like{
-    i{
-        position: absolute;
-        top:0;
-        left:0;}
+.button_like__heart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
-        &.fas{
-            color: $color_primary;
-            opacity: 0;
-            transform: scale(0);
-            transition: all 1500ms;
-        }
+.button_like__heart--on {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(75%), to(#FF79DA));
+  background: linear-gradient(#9356DC, 75%, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
 
-        &.far:hover + &.fas{
-            opacity: 1;
-            transform: scale(1.2);
-        }
+.button_like__heart--off {
+  z-index: 1;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
 
-        /*&:active, &:hover{
-            opacity: 1;
-            transform: scale(1.2);
-        }*/
+.button_like__heart--off:hover {
+  opacity: 0;
+}
+
+.button_like__heart--off:hover + .button_like__heart--on {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .loading_box {
   position: fixed;
   top: 0;

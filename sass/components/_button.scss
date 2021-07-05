@@ -16,29 +16,30 @@
     }
 }
 
+.button_like__heart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
+    &--on{
+        background: linear-gradient( $color_primary , 75%, $color_secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms ease-in-out;
+        transform: scale(0);
+    }
 
-/*.button_like{
-    i{
-        position: absolute;
-        top:0;
-        left:0;}
+    &--off{
+        z-index:1;
+        transition: all 400ms ease-in-out;
 
-        &.fas{
-            color: $color_primary;
-            opacity: 0;
-            transform: scale(0);
-            transition: all 1500ms;
+        &:hover{
+            opacity:0;
         }
+    }
 
-        &.far:hover + &.fas{
-            opacity: 1;
-            transform: scale(1.2);
-        }
-
-        /*&:active, &:hover{
-            opacity: 1;
-            transform: scale(1.2);
-        }*/
-   // }   
-//}
+    &--off:hover + &--on{
+        transform: scale(1);
+    }
+}
