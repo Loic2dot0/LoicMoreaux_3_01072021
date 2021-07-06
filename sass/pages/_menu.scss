@@ -16,11 +16,46 @@
     background-color: $grey_light;
     border-radius: 10vw 10vw 0 0;
     padding-top: 10vw;
+    padding-bottom: 22vw;
+    
     position: relative;
     margin-top: -10vw;
 
-    h1{
-        margin-top: 0;
+    &__header{
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 12vw;
+        display: flex;
+        
     }
 
+    &__like{
+        position: relative;
+        width: 5.5vw;
+        height: 5.5vw;
+        font-size: 5.5vw;
+        margin-right: 5vw;
+    }   
+
+    h1{
+        margin: 0;
+        font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        flex: 1;
+    }
+
+    h2{
+        width: 90vw;
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: normal;
+
+        &::after{
+            content: "";
+            display: block;
+            background-color: $color_tertiary;
+            width: 12vw;
+            height:0.8vw;
+        }
+    }
 }
