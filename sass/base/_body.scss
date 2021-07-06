@@ -18,13 +18,19 @@ body{
     }
 }
 
+h1{
+    font-size: 5.5vw;
+}
+
 h2{
     font-size: 4.8vw;
-    font-weight: bold;
 }
 
 h3{
     font-size: 4.0vw;
+}
+
+h1, h2, h3, b, strong{
     font-weight: bold;
 }
 

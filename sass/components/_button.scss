@@ -8,6 +8,7 @@
     color: $text_light;
     font-size: 3.5vw;
     font-weight: bold;
+    text-align: center;
     @include shadow_effect;
 
     &:hover{
