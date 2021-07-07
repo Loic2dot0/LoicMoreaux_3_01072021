@@ -56,6 +56,26 @@
             background-color: $color_tertiary;
             width: 12vw;
             height:0.8vw;
+            margin-bottom: 4vw;
+        }
+    }
+}
+
+.menu_list{
+    list-style: none;
+    padding: 0;
+
+    li{
+        width: 93vw;
+        height: 18.5vw;
+        margin:auto;
+        margin-bottom: 3.5vw;
+        border-radius: 3vw;
+        background-color: $color_back_light;
+        @include shadow_effect;
+
+        &:last-child{
+            margin-bottom: 11vw;
         }
     }
 }
