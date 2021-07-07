@@ -21,3 +21,15 @@
         $delai: $delai + $circle_delai;
     }   
 }
+
+@mixin listing($delta){
+    $delai : 400ms;
+    @for $i from 1 through 3 {
+        @for $j from 1 through 3{
+            &--#{$i} li:nth-child(#{$j}){
+                animation: listing_appear 400ms $delai ease-in-out both;
+                $delai: $delai + $delta;
+            }
+        }
+    }            
+}

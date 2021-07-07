@@ -71,10 +71,11 @@
         border-radius: 3vw;
         background-color: $color_back_light;
         @include shadow_effect;
-        animation: listing_appear 400ms  400ms ease-in-out both;
 
         &:last-child{
             margin-bottom: 11vw;
         }
     }
+
+    @include listing(200ms);
 }

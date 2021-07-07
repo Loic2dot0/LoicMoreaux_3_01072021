@@ -618,10 +618,53 @@ img {
           box-shadow: 0px 1vw 1.6vw #b3b3b3;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
-  -webkit-animation: listing_appear 400ms  400ms ease-in-out both;
-          animation: listing_appear 400ms  400ms ease-in-out both;
 }
 
 .menu_list li:last-child {
   margin-bottom: 11vw;
+}
+
+.menu_list--1 li:nth-child(1) {
+  -webkit-animation: listing_appear 400ms 400ms ease-in-out both;
+          animation: listing_appear 400ms 400ms ease-in-out both;
+}
+
+.menu_list--1 li:nth-child(2) {
+  -webkit-animation: listing_appear 400ms 600ms ease-in-out both;
+          animation: listing_appear 400ms 600ms ease-in-out both;
+}
+
+.menu_list--1 li:nth-child(3) {
+  -webkit-animation: listing_appear 400ms 800ms ease-in-out both;
+          animation: listing_appear 400ms 800ms ease-in-out both;
+}
+
+.menu_list--2 li:nth-child(1) {
+  -webkit-animation: listing_appear 400ms 1000ms ease-in-out both;
+          animation: listing_appear 400ms 1000ms ease-in-out both;
+}
+
+.menu_list--2 li:nth-child(2) {
+  -webkit-animation: listing_appear 400ms 1200ms ease-in-out both;
+          animation: listing_appear 400ms 1200ms ease-in-out both;
+}
+
+.menu_list--2 li:nth-child(3) {
+  -webkit-animation: listing_appear 400ms 1400ms ease-in-out both;
+          animation: listing_appear 400ms 1400ms ease-in-out both;
+}
+
+.menu_list--3 li:nth-child(1) {
+  -webkit-animation: listing_appear 400ms 1600ms ease-in-out both;
+          animation: listing_appear 400ms 1600ms ease-in-out both;
+}
+
+.menu_list--3 li:nth-child(2) {
+  -webkit-animation: listing_appear 400ms 1800ms ease-in-out both;
+          animation: listing_appear 400ms 1800ms ease-in-out both;
+}
+
+.menu_list--3 li:nth-child(3) {
+  -webkit-animation: listing_appear 400ms 2000ms ease-in-out both;
+          animation: listing_appear 400ms 2000ms ease-in-out both;
 }
