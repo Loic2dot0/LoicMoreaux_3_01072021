@@ -46,3 +46,20 @@
         transform: scale(1);
     }
 }
+
+@keyframes listing_appear{
+    0%{
+        opacity: 0;
+        transform: translateY(2vw);
+    }
+
+    10%{
+        opacity: 0.2;
+        transform: translateY(2vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
