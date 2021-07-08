@@ -223,6 +223,7 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 0.5vw;
 }
 
 .button_like__heart--on {
