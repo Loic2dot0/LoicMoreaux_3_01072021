@@ -277,43 +277,43 @@ img {
 .loading_box__spinner--primary {
   background-color: #9356DC;
   z-index: 10;
-  -webkit-animation: spinner 900ms 600ms infinite linear;
-          animation: spinner 900ms 600ms infinite linear;
+  -webkit-animation: spinner 900ms 600ms 4 linear;
+          animation: spinner 900ms 600ms 4 linear;
 }
 
 .loading_box__spinner--primarylight {
   background-color: #ae80e5;
   z-index: 9;
-  -webkit-animation: spinner 900ms 750ms infinite linear;
-          animation: spinner 900ms 750ms infinite linear;
+  -webkit-animation: spinner 900ms 750ms 4 linear;
+          animation: spinner 900ms 750ms 4 linear;
 }
 
 .loading_box__spinner--secondary {
   background-color: #FF79DA;
   z-index: 8;
-  -webkit-animation: spinner 900ms 900ms infinite linear;
-          animation: spinner 900ms 900ms infinite linear;
+  -webkit-animation: spinner 900ms 900ms 4 linear;
+          animation: spinner 900ms 900ms 4 linear;
 }
 
 .loading_box__spinner--secondarylight {
   background-color: #fface8;
   z-index: 7;
-  -webkit-animation: spinner 900ms 1050ms infinite linear;
-          animation: spinner 900ms 1050ms infinite linear;
+  -webkit-animation: spinner 900ms 1050ms 4 linear;
+          animation: spinner 900ms 1050ms 4 linear;
 }
 
 .loading_box__spinner--tertiary {
   background-color: #99E2D0;
   z-index: 6;
-  -webkit-animation: spinner 900ms 1200ms infinite linear;
-          animation: spinner 900ms 1200ms infinite linear;
+  -webkit-animation: spinner 900ms 1200ms 4 linear;
+          animation: spinner 900ms 1200ms 4 linear;
 }
 
 .loading_box__spinner--tertiarylight {
   background-color: #c1ede2;
   z-index: 5;
-  -webkit-animation: spinner 900ms 1350ms infinite linear;
-          animation: spinner 900ms 1350ms infinite linear;
+  -webkit-animation: spinner 900ms 1350ms 4 linear;
+          animation: spinner 900ms 1350ms 4 linear;
 }
 
 .header {

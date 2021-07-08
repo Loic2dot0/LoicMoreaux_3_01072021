@@ -15,7 +15,7 @@
         &--#{$key}{
             background-color: $value;
             z-index: $i;
-            animation: spinner $spinner_duration $delai infinite linear;
+            animation: spinner $spinner_duration $delai 4 linear;
         }
         $i: $i - 1;
         $delai: $delai + $circle_delai;
