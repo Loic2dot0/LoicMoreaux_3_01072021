@@ -45,3 +45,57 @@
         animation: liking 400ms both;
     }
 }
+
+.button_menu{
+    display: flex;
+    overflow: hidden;
+    text-align: left;    
+
+    &__text{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4vw 0 4vw 3vw;
+        overflow: hidden;
+
+        >*{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin:0;
+        }
+    }
+
+    &__price{
+        width: 14.5vw;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 4vw;
+        padding-left: 1.5vw;
+    }
+
+    &__check{
+        background-color: $color_tertiary;
+        color: $text_light;
+        width: 16vw;
+        line-height: 18.5vw;
+        margin-right: -16vw;
+        font-size: 6vw;   
+        transition: all 500ms ease-in-out;
+        text-align: center;
+
+        i{
+            transition: all 500ms ease-in-out;
+        }
+
+    }
+
+    &:hover &__check{
+        margin-right: 0vw;
+
+        i{
+            transform: rotate(1turn);
+        }  
+    }
+}

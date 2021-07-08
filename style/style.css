@@ -231,6 +231,78 @@ img {
           animation: liking 400ms both;
 }
 
+.button_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  text-align: left;
+}
+
+.button_menu__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4vw 0 4vw 3vw;
+  overflow: hidden;
+}
+
+.button_menu__text > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.button_menu__price {
+  width: 14.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-bottom: 4vw;
+  padding-left: 1.5vw;
+}
+
+.button_menu__check {
+  background-color: #99E2D0;
+  color: #fff;
+  width: 16vw;
+  line-height: 18.5vw;
+  margin-right: -16vw;
+  font-size: 6vw;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+}
+
+.button_menu__check i {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.button_menu:hover .button_menu__check {
+  margin-right: 0vw;
+}
+
+.button_menu:hover .button_menu__check i {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+
 .loading_box {
   position: fixed;
   top: 0;
