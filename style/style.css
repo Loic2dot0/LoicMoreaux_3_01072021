@@ -19,8 +19,12 @@
   }
   95%, 100% {
     opacity: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
     display: none;
   }
 }
@@ -34,8 +38,12 @@
   }
   95%, 100% {
     opacity: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
     display: none;
   }
 }
