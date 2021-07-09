@@ -466,6 +466,16 @@ img {
           animation: spinner 900ms 1350ms 4 linear;
 }
 
+@media screen and (min-width: 1024px) {
+  .loading_box__spinner {
+    width: 5vw;
+    height: 5vw;
+    left: 40vw;
+    -webkit-transform-origin: 10vw center;
+            transform-origin: 10vw center;
+  }
+}
+
 .header {
   position: relative;
   height: 17vw;

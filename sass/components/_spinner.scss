@@ -17,5 +17,12 @@
         transform-origin: 20vw center;
 
         @include loading_spinner($spinner);
+
+        @include desktop{
+            width: 5vw;
+            height: 5vw;
+            left: 40vw;
+            transform-origin: 10vw center;
+        }
     }
 }
