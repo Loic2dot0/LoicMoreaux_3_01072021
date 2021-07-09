@@ -215,7 +215,6 @@ img {
 .button_like__heart--on {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(75%), to(#FF79DA));
   background: linear-gradient(#9356DC, 75%, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transition: all 400ms ease-in-out;
@@ -270,6 +269,11 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+}
+
+.button_menu__title {
+  font-size: 4.0vw;
+  font-weight: bold;
 }
 
 .button_menu__price {
@@ -678,6 +682,16 @@ img {
   display: flex;
 }
 
+.restaurant_menu__header h2 {
+  margin: 0;
+  font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 5.5vw;
+}
+
 .restaurant_menu__like {
   position: relative;
   width: 5.5vw;
@@ -686,23 +700,14 @@ img {
   margin-right: 5vw;
 }
 
-.restaurant_menu h1 {
-  margin: 0;
-  font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.restaurant_menu h2 {
+.restaurant_menu h3 {
   width: 90vw;
   margin: auto;
   text-transform: uppercase;
   font-weight: normal;
 }
 
-.restaurant_menu h2::after {
+.restaurant_menu h3::after {
   content: "";
   display: block;
   background-color: #99E2D0;

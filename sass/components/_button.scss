@@ -25,7 +25,7 @@
 
     &--on{
         background: linear-gradient( $color_primary , 75%, $color_secondary);
-        background-clip: text;
+        //background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         transition: all 400ms ease-in-out;
@@ -65,6 +65,11 @@
             text-overflow: ellipsis;
             margin:0;
         }
+    }
+
+    &__title{
+        font-size: 4.0vw;
+        font-weight: bold;
     }
 
     &__price{

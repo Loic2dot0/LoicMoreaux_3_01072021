@@ -24,6 +24,14 @@
         margin: auto;
         margin-bottom: 12vw;
         display: flex;
+
+        h2{
+            margin: 0;
+            font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            flex: 1;
+            font-size: 5.5vw;
+        }
         
     }
 
@@ -35,14 +43,7 @@
         margin-right: 5vw;
     }   
 
-    h1{
-        margin: 0;
-        font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: normal;
-        flex: 1;
-    }
-
-    h2{
+    h3{
         width: 90vw;
         margin: auto;
         text-transform: uppercase;
