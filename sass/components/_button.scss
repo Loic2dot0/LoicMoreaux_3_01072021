@@ -15,6 +15,13 @@
         background: linear-gradient(170deg, lighten($color_secondary, 5%), 10%, lighten($color_primary, 5%));
         @include shadow_effect_hover;
     }
+
+    @include desktop{
+        line-height: 60px;
+        border-radius: 30px;
+        width: 220px;
+        font-size: 1rem;
+    }
 }
 
 .button_like__heart{
