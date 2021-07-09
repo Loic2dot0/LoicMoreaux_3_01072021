@@ -1,12 +1,19 @@
 //for dev only
 //*{outline: solid 1px red;}
 // end for dev only
+html{
+    font-size: 100%;
+}
 
 body{
     margin:0px;
     color: $text_dark;
     font-size: 3.5vw;
     font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+
+    @include desktop{
+        font-size: 1rem;
+    }
 
     >*{
         width: 100%;
@@ -20,14 +27,26 @@ body{
 
 h1{
     font-size: 5.5vw;
+
+    @include desktop{
+        font-size: 2rem;
+    }
 }
 
 h2{
     font-size: 4.8vw;
+    
+    @include desktop{
+        font-size: 1.5rem;
+    }
 }
 
 h3{
     font-size: 4.0vw;
+
+    @include desktop{
+        font-size: 1.2rem;
+    }
 }
 
 h1, h2, h3, b, strong{

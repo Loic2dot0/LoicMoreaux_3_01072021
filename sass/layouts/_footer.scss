@@ -2,16 +2,26 @@
     background-color: $color_back_dark;
     color: $text_light;
     padding: 6vw;
+    
+    @include desktop{
+        padding: 20px;
+    }
 
     &__title{
         font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
         font-weight: normal;
+        width: 90vw;
+        max-width: 1900px;
+        margin:auto;
     }
 
     &__listing{
         list-style: none;
         padding: 0;
         line-height: 6.5vw;
+        width: 90vw;
+        max-width: 1900px;
+        margin: auto;
 
         i{
             display: inline-block;
@@ -24,6 +34,20 @@
 
             &:hover{
                 text-decoration: underline;
+            }
+        }
+
+        @include desktop{
+            line-height: 30px;
+            display:flex;
+            justify-content: space-between;
+                        
+            li{
+                width: 20%;
+                
+                i{
+                    width: auto;
+                }
             }
         }
     }

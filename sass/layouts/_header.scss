@@ -1,6 +1,7 @@
 .header{
     position: relative;
     height: 17vw;
+    max-height: 170px;
     display: flex;
     box-shadow: 0px 0px 1.6vw $grey_darker;
 
@@ -11,6 +12,7 @@
     &__logo
     {
         width: 43.5vw;
+        max-width: 435px;
         margin: auto;
     }
 
@@ -30,6 +32,12 @@
 
         &:hover, &:active{
             transform: scale(1.2);
+        }
+
+        @include desktop{
+            left: 10%;
+            top: 60px;
+            font-size: 46px;
         }
     }
 }

@@ -140,11 +140,21 @@
   }
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0px;
   color: #000;
   font-size: 3.5vw;
   font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 body > * {
@@ -161,12 +171,30 @@ h1 {
   font-size: 5.5vw;
 }
 
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 h2 {
   font-size: 4.8vw;
 }
 
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 h3 {
   font-size: 4.0vw;
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 h1, h2, h3, b, strong {
@@ -432,6 +460,7 @@ img {
 .header {
   position: relative;
   height: 17vw;
+  max-height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,6 +474,7 @@ img {
 
 .header__logo {
   width: 43.5vw;
+  max-width: 435px;
   margin: auto;
 }
 
@@ -470,21 +500,41 @@ img {
           transform: scale(1.2);
 }
 
+@media screen and (min-width: 1024px) {
+  .header__link {
+    left: 10%;
+    top: 60px;
+    font-size: 46px;
+  }
+}
+
 .footer {
   background-color: #353535;
   color: #fff;
   padding: 6vw;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 20px;
+  }
+}
+
 .footer__title {
   font-family: 'shrikhand', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
+  width: 90vw;
+  max-width: 1900px;
+  margin: auto;
 }
 
 .footer__listing {
   list-style: none;
   padding: 0;
   line-height: 6.5vw;
+  width: 90vw;
+  max-width: 1900px;
+  margin: auto;
 }
 
 .footer__listing i {
@@ -499,6 +549,24 @@ img {
 
 .footer__listing a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__listing {
+    line-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__listing li {
+    width: 20%;
+  }
+  .footer__listing li i {
+    width: auto;
+  }
 }
 
 .introduction {
