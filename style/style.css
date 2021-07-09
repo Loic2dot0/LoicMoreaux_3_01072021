@@ -591,17 +591,42 @@ img {
   font-size: 6vw;
 }
 
+@media screen and (min-width: 1024px) {
+  .introduction {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .introduction__location {
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+  .introduction__location i {
+    margin-right: auto;
+  }
+  .introduction h2 {
+    margin: auto;
+    font-size: 2rem;
+  }
+}
+
 .functioning, .restaurant {
   padding: 15vw 0;
 }
 
 .functioning > *, .restaurant > * {
   width: 90vw;
+  max-width: 1900px;
   margin: auto;
 }
 
 .functioning__title, .restaurant__title {
   padding-bottom: 2vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .functioning, .restaurant {
+    padding: 30px 5% 60px 5%;
+  }
 }
 
 .functioning__listing {
@@ -652,8 +677,49 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .functioning__listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .functioning__listing li {
+    width: 30%;
+    max-width: 500px;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  .functioning__listing li::before {
+    width: 2rem;
+    line-height: 2rem;
+    margin: auto 10px auto -1rem;
+  }
+  .functioning__listing li i {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    margin-right: 10px;
+  }
+}
+
 .restaurant {
   background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .restaurant_card {
@@ -716,6 +782,41 @@ img {
   position: absolute;
   bottom: 9vw;
   right: 7vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant_card {
+    width: 21.5vw;
+    max-width: 450px;
+    height: 16.7vw;
+    max-height: 335px;
+    margin: 0;
+    padding: 2px;
+    border-radius: 20px;
+  }
+  .restaurant_card img {
+    height: 11.5vw;
+    max-height: 230px;
+    min-width: 100%;
+    border-radius: 18px 18px 0 0;
+  }
+  .restaurant_card h3, .restaurant_card p {
+    margin: 0 0 0 10px;
+  }
+  .restaurant_card__new {
+    top: 10px;
+    right: 10px;
+    width: 5.2vw;
+    max-width: 105px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .restaurant_card__like {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 .restaurant_picture {
