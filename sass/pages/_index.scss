@@ -226,4 +226,23 @@
             right: 10px;
         }
     }
+
+    @include tablet{
+        width: 43vw;
+        max-width: 550px;
+        height: 33.4vw;
+        max-height: 427px;
+        margin-bottom: 20px;
+
+        img{
+            height: 23vw;
+            max-height: 300px;
+        }
+    
+        &__new{
+            top: 20px;
+            right: 20px;
+            width: 7vw;
+        }
+    }
 }

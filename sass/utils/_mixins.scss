@@ -1,10 +1,18 @@
 @mixin shadow_effect{
     box-shadow: 0px 1vw 1.6vw $grey_dark;
     transition: all 400ms ease-in-out;
+
+    @include desktop{
+        box-shadow: 0px 5px 8px $grey_dark;
+    }
 }
 
 @mixin shadow_effect_hover{
     box-shadow: 0px 1vw 1vw $grey_darker;
+
+    @include desktop{
+        box-shadow: 0px 5px 5px $grey_darker;
+    }
 }
 
 @mixin loading_spinner($spinner, $spinner_duration: 900ms, $circle_delai: 150ms){
@@ -34,6 +42,12 @@
 
 @mixin desktop{
     @media screen and (min-width:1024px){
+        @content;        
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width:1024px) and (max-width:1279px){
         @content;        
     }
 }

@@ -227,10 +227,24 @@ img {
   transition: all 400ms ease-in-out;
 }
 
+@media screen and (min-width: 1024px) {
+  .button_main {
+    -webkit-box-shadow: 0px 5px 8px #b3b3b3;
+            box-shadow: 0px 5px 8px #b3b3b3;
+  }
+}
+
 .button_main:hover {
   background: linear-gradient(170deg, #ff93e1, 10%, #a16be0);
   -webkit-box-shadow: 0px 1vw 1vw gray;
           box-shadow: 0px 1vw 1vw gray;
+}
+
+@media screen and (min-width: 1024px) {
+  .button_main:hover {
+    -webkit-box-shadow: 0px 5px 5px gray;
+            box-shadow: 0px 5px 5px gray;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -699,6 +713,13 @@ img {
   transition: all 400ms ease-in-out;
 }
 
+@media screen and (min-width: 1024px) {
+  .functioning__listing li {
+    -webkit-box-shadow: 0px 5px 8px #b3b3b3;
+            box-shadow: 0px 5px 8px #b3b3b3;
+  }
+}
+
 .functioning__listing li::before {
   content: counter(perso);
   display: inline-block;
@@ -788,11 +809,25 @@ img {
   transition: all 400ms ease-in-out;
 }
 
+@media screen and (min-width: 1024px) {
+  .restaurant_card {
+    -webkit-box-shadow: 0px 5px 8px #b3b3b3;
+            box-shadow: 0px 5px 8px #b3b3b3;
+  }
+}
+
 .restaurant_card:hover {
   -webkit-box-shadow: 0px 1vw 1vw gray;
           box-shadow: 0px 1vw 1vw gray;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant_card:hover {
+    -webkit-box-shadow: 0px 5px 5px gray;
+            box-shadow: 0px 5px 5px gray;
+  }
 }
 
 .restaurant_card img {
@@ -866,6 +901,25 @@ img {
     position: absolute;
     bottom: 10px;
     right: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .restaurant_card {
+    width: 43vw;
+    max-width: 550px;
+    height: 33.4vw;
+    max-height: 427px;
+    margin-bottom: 20px;
+  }
+  .restaurant_card img {
+    height: 23vw;
+    max-height: 300px;
+  }
+  .restaurant_card__new {
+    top: 20px;
+    right: 20px;
+    width: 7vw;
   }
 }
 
@@ -995,6 +1049,13 @@ img {
           box-shadow: 0px 1vw 1.6vw #b3b3b3;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu_list li {
+    -webkit-box-shadow: 0px 5px 8px #b3b3b3;
+            box-shadow: 0px 5px 8px #b3b3b3;
+  }
 }
 
 .menu_list li:last-child {
