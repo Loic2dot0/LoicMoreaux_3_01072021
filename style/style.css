@@ -247,6 +247,13 @@ img {
   }
 }
 
+.button_main:focus {
+  outline: none;
+  border: solid 3px #99E2D0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 @media screen and (min-width: 1024px) {
   .button_main {
     line-height: 60px;
@@ -548,8 +555,8 @@ img {
   top: 5vw;
   font-size: 4.6vw;
   font-weight: bold;
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -561,6 +568,18 @@ img {
 .header__link:hover, .header__link:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.header__link:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(75%), to(#FF79DA));
+  background: linear-gradient(#9356DC, 75%, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header__link:focus {
+  outline: none;
+  border-bottom: solid 5px #99E2D0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -612,6 +631,15 @@ img {
 
 .footer__listing a:hover {
   text-decoration: underline;
+}
+
+.footer__listing a:focus {
+  outline: none;
+  border-bottom: solid 5px #99E2D0;
+}
+
+.footer__listing a:active {
+  color: #99E2D0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -828,6 +856,11 @@ img {
     -webkit-box-shadow: 0px 5px 5px gray;
             box-shadow: 0px 5px 5px gray;
   }
+}
+
+.restaurant_card:focus {
+  outline: none;
+  border: solid 3px #99E2D0;
 }
 
 .restaurant_card img {

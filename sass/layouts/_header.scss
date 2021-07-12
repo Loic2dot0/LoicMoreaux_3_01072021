@@ -23,7 +23,7 @@
         top: 5vw;
         font-size: 4.6vw;
         font-weight: bold;
-        transition: 400ms;
+        transition: all 400ms;
         transform: scale(1);
 
         &--hidden{
@@ -32,6 +32,16 @@
 
         &:hover, &:active{
             transform: scale(1.2);
+        }
+
+        &:active{
+            background: linear-gradient( $color_primary , 75%, $color_secondary);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &:focus{
+            @include effect_focus;
         }
 
         @include desktop{

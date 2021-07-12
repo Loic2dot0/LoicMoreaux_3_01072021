@@ -153,6 +153,11 @@
         transform: scale(1.01);
     }
 
+    &:focus{
+        outline: none;
+        border:solid 3px $color_tertiary;
+    }
+
     img{
         object-fit: cover;
         object-position: 50% 62%;

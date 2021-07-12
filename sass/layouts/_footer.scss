@@ -35,6 +35,14 @@
             &:hover{
                 text-decoration: underline;
             }
+
+            &:focus{
+                @include effect_focus;
+            }
+
+            &:active{
+                color: $color_tertiary;
+            }
         }
 
         @include desktop{

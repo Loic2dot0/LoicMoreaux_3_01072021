@@ -15,6 +15,11 @@
     }
 }
 
+@mixin effect_focus{
+    outline: none;
+    border-bottom: solid 5px $color_tertiary;
+ }
+
 @mixin loading_spinner($spinner, $spinner_duration: 900ms, $circle_delai: 150ms){
     $i : 10;
     $delai: 600ms;
