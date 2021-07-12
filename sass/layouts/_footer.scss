@@ -4,7 +4,7 @@
     padding: 6vw;
     
     @include desktop{
-        padding: 20px;
+        padding: 30px;
     }
 
     &__title{
@@ -39,6 +39,7 @@
 
         @include desktop{
             line-height: 30px;
+            margin-top: 20px;
             display:flex;
             justify-content: space-between;
                         

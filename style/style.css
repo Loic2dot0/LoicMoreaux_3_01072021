@@ -579,7 +579,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 20px;
+    padding: 30px;
   }
 }
 
@@ -617,6 +617,7 @@ img {
 @media screen and (min-width: 1024px) {
   .footer__listing {
     line-height: 30px;
+    margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
