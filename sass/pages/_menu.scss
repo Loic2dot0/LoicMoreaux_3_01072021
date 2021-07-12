@@ -2,11 +2,11 @@
     width: 100%;
     height: 70vw;
     max-height: 500px;
+    overflow: hidden;
 
     img{
         object-fit: cover;
         object-position: 50% 50%;
-        overflow: hidden;
         min-height: 100%;
     }
 }
@@ -33,8 +33,7 @@
             font-weight: normal;
             flex: 1;
             font-size: 5.5vw;
-        }
-        
+        }  
     }
 
     &__like{
@@ -66,8 +65,10 @@
         border-radius: 100px 100px 0 0;
         padding-top: 100px;
         padding-bottom: 60px;
-        
         margin-top: -125px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     
         &__header{
             margin-bottom: 45px;
@@ -85,6 +86,9 @@
         }   
     
         h3{
+            width: 30vw;
+            max-width: 570px;
+
             &::after{
             
             width: 3vw;
@@ -92,6 +96,10 @@
             height: 0.2rem;
             margin-bottom: 40px;
             }
+        }
+
+        &__block{
+            width: 31%;
         }
     }
 }
@@ -120,6 +128,10 @@
             max-height: 115px;
             margin-bottom: 20px;
             border-radius: 20px;
+
+            &:last-child{
+                margin-bottom: 40px;
+            }
         }
     }
 }

@@ -66,6 +66,10 @@
         padding: 4vw 0 4vw 3vw;
         overflow: hidden;
 
+        @include desktop{
+            padding: 15px;
+        }
+
         >*{
             white-space: nowrap;
             overflow: hidden;
@@ -77,6 +81,10 @@
     &__title{
         font-size: 4.0vw;
         font-weight: bold;
+
+        @include desktop{
+            font-size: 1.2rem;
+        }
     }
 
     &__price{
@@ -85,6 +93,13 @@
         flex-direction: column-reverse;
         padding-bottom: 4vw;
         padding-left: 1.5vw;
+
+        @include desktop{
+            width: 4.5vw;
+            max-width: 90px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+        }
     }
 
     &__check{
@@ -96,6 +111,14 @@
         font-size: 6vw;   
         transition: all 500ms ease-in-out;
         text-align: center;
+
+        @include desktop{
+            width: 5vw;
+            line-height: 6vw;
+            max-height: 115px;
+            margin-right: -5vw;
+            font-size: 2rem; 
+        }
 
         i{
             transition: all 500ms ease-in-out;
