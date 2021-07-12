@@ -58,3 +58,18 @@
         transform: translateY(0);
     }
 }
+
+@keyframes effect_active{
+    0%{
+        transform: scale(1);
+    }
+    
+    90% {
+        transform: scale(1.05);
+        animation-timing-function: cubic-bezier(.96,.04,.99,.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

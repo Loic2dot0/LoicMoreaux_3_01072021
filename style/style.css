@@ -140,6 +140,40 @@
   }
 }
 
+@-webkit-keyframes effect_active {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+            animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes effect_active {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+            animation-timing-function: cubic-bezier(0.96, 0.04, 0.99, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 html {
   font-size: 100%;
 }
@@ -252,6 +286,11 @@ img {
   border: solid 3px #99E2D0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+.button_main:active {
+  -webkit-animation: effect_active 400ms both;
+          animation: effect_active 400ms both;
 }
 
 @media screen and (min-width: 1024px) {
@@ -861,6 +900,11 @@ img {
 .restaurant_card:focus {
   outline: none;
   border: solid 3px #99E2D0;
+}
+
+.restaurant_card:active {
+  -webkit-animation: effect_active 400ms both;
+          animation: effect_active 400ms both;
 }
 
 .restaurant_card img {

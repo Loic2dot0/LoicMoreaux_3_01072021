@@ -158,6 +158,10 @@
         border:solid 3px $color_tertiary;
     }
 
+    &:active{
+        animation: effect_active 400ms both;
+    }
+
     img{
         object-fit: cover;
         object-position: 50% 62%;

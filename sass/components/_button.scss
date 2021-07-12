@@ -22,6 +22,10 @@
         box-sizing: content-box;
     }
 
+    &:active{
+        animation: effect_active 400ms both;
+    }
+
     @include desktop{
         line-height: 60px;
         border-radius: 30px;
